@@ -1,0 +1,13 @@
+<html>
+<head><title></title></head>
+
+<body>
+
+    <ul>
+        {% for photo in photos %}
+            <li><img src="data:image;base64,{{ photo.1 }}" style="max-width: 100vw;"></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
